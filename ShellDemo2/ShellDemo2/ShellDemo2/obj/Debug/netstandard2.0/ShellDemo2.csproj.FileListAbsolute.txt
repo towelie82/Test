@@ -1,0 +1,16 @@
+C:\Users\wendyz\Desktop\Test\ShellDemo2\ShellDemo2\ShellDemo2\bin\Debug\netstandard2.0\ShellDemo2.deps.json
+C:\Users\wendyz\Desktop\Test\ShellDemo2\ShellDemo2\ShellDemo2\bin\Debug\netstandard2.0\ShellDemo2.dll
+C:\Users\wendyz\Desktop\Test\ShellDemo2\ShellDemo2\ShellDemo2\bin\Debug\netstandard2.0\ref\ShellDemo2.dll
+C:\Users\wendyz\Desktop\Test\ShellDemo2\ShellDemo2\ShellDemo2\bin\Debug\netstandard2.0\ShellDemo2.pdb
+C:\Users\wendyz\Desktop\Test\ShellDemo2\ShellDemo2\ShellDemo2\obj\Debug\netstandard2.0\ShellDemo2.csprojAssemblyReference.cache
+C:\Users\wendyz\Desktop\Test\ShellDemo2\ShellDemo2\ShellDemo2\obj\Debug\netstandard2.0\App.xaml.g.cs
+C:\Users\wendyz\Desktop\Test\ShellDemo2\ShellDemo2\ShellDemo2\obj\Debug\netstandard2.0\AppShell.xaml.g.cs
+C:\Users\wendyz\Desktop\Test\ShellDemo2\ShellDemo2\ShellDemo2\obj\Debug\netstandard2.0\Views\MainPage.xaml.g.cs
+C:\Users\wendyz\Desktop\Test\ShellDemo2\ShellDemo2\ShellDemo2\obj\Debug\netstandard2.0\Views\MenuPage.xaml.g.cs
+C:\Users\wendyz\Desktop\Test\ShellDemo2\ShellDemo2\ShellDemo2\obj\Debug\netstandard2.0\ShellDemo2.csproj.CoreCompileInputs.cache
+C:\Users\wendyz\Desktop\Test\ShellDemo2\ShellDemo2\ShellDemo2\obj\Debug\netstandard2.0\ShellDemo2.AssemblyInfoInputs.cache
+C:\Users\wendyz\Desktop\Test\ShellDemo2\ShellDemo2\ShellDemo2\obj\Debug\netstandard2.0\ShellDemo2.AssemblyInfo.cs
+C:\Users\wendyz\Desktop\Test\ShellDemo2\ShellDemo2\ShellDemo2\obj\Debug\netstandard2.0\XamlC.stamp
+C:\Users\wendyz\Desktop\Test\ShellDemo2\ShellDemo2\ShellDemo2\obj\Debug\netstandard2.0\ShellDemo2.dll
+C:\Users\wendyz\Desktop\Test\ShellDemo2\ShellDemo2\ShellDemo2\obj\Debug\netstandard2.0\ref\ShellDemo2.dll
+C:\Users\wendyz\Desktop\Test\ShellDemo2\ShellDemo2\ShellDemo2\obj\Debug\netstandard2.0\ShellDemo2.pdb

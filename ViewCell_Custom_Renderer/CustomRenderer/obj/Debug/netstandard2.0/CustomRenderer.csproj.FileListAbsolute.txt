@@ -1,0 +1,12 @@
+F:\Xamarin\Example\Xamarin_Forms___ViewCell_Custom_Renderer\CustomRenderer\bin\Debug\netstandard2.0\CustomRenderer.deps.json
+F:\Xamarin\Example\Xamarin_Forms___ViewCell_Custom_Renderer\CustomRenderer\bin\Debug\netstandard2.0\CustomRenderer.dll
+F:\Xamarin\Example\Xamarin_Forms___ViewCell_Custom_Renderer\CustomRenderer\bin\Debug\netstandard2.0\CustomRenderer.pdb
+F:\Xamarin\Example\Xamarin_Forms___ViewCell_Custom_Renderer\CustomRenderer\obj\Debug\netstandard2.0\CustomRenderer.csprojAssemblyReference.cache
+F:\Xamarin\Example\Xamarin_Forms___ViewCell_Custom_Renderer\CustomRenderer\obj\Debug\netstandard2.0\DetailPage.xaml.g.cs
+F:\Xamarin\Example\Xamarin_Forms___ViewCell_Custom_Renderer\CustomRenderer\obj\Debug\netstandard2.0\NativeCellPage.xaml.g.cs
+F:\Xamarin\Example\Xamarin_Forms___ViewCell_Custom_Renderer\CustomRenderer\obj\Debug\netstandard2.0\CustomRenderer.csproj.CoreCompileInputs.cache
+F:\Xamarin\Example\Xamarin_Forms___ViewCell_Custom_Renderer\CustomRenderer\obj\Debug\netstandard2.0\CustomRenderer.AssemblyInfoInputs.cache
+F:\Xamarin\Example\Xamarin_Forms___ViewCell_Custom_Renderer\CustomRenderer\obj\Debug\netstandard2.0\CustomRenderer.AssemblyInfo.cs
+F:\Xamarin\Example\Xamarin_Forms___ViewCell_Custom_Renderer\CustomRenderer\obj\Debug\netstandard2.0\XamlC.stamp
+F:\Xamarin\Example\Xamarin_Forms___ViewCell_Custom_Renderer\CustomRenderer\obj\Debug\netstandard2.0\CustomRenderer.dll
+F:\Xamarin\Example\Xamarin_Forms___ViewCell_Custom_Renderer\CustomRenderer\obj\Debug\netstandard2.0\CustomRenderer.pdb

@@ -1,0 +1,103 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             xmlns:local="clr-namespace:CaseDemo.MultipleSubuser"
+             xmlns:controls="clr-namespace:ImageCircle.Forms.Plugin.Abstractions;assembly=ImageCircle.Forms.Plugin"
+             mc:Ignorable="d"
+             x:Class="CaseDemo.MultipleSubuser.ProfilePage"
+             Title="Profile">
+
+    <ContentPage.Resources>
+        <Style x:Key="nakedButton" TargetType="Button">
+            <Setter Property="BackgroundColor" Value="LightGray" />
+            <Setter Property="TextColor" Value="White" />
+            <Setter Property="BorderWidth" Value="0"/>
+            <Setter Property="FontSize" Value="12" />
+            <Setter Property="WidthRequest" Value="85" />
+            <Setter Property="HeightRequest" Value="35" />
+            <Setter Property="BorderRadius" Value="15" />
+        </Style>
+    </ContentPage.Resources>
+
+    <ContentPage.ToolbarItems>
+        <ToolbarItem>
+            
+        </ToolbarItem>
+    </ContentPage.ToolbarItems>
+        
+    <ContentPage.Content>
+        <StackLayout Orientation="Vertical" HorizontalOptions="CenterAndExpand" BackgroundColor="White">
+          
+            <!--Part1 addnew edit two buttons-->
+            <AbsoluteLayout BackgroundColor="White"
+                        HeightRequest="60">
+                <Button Text="Add New" 
+                    Margin="10,10"                                     
+                    Style="{StaticResource nakedButton}" />
+                <Button Text="Edit" 
+                    Margin="10,10" 
+                    AbsoluteLayout.LayoutBounds="1, 0, AutoSize, AutoSize" 
+                    AbsoluteLayout.LayoutFlags="PositionProportional"                     
+                    Style="{StaticResource nakedButton}" />
+            </AbsoluteLayout>
+
+            <!--Part2 user image and user name--> 
+            <StackLayout Orientation="Horizontal" HorizontalOptions="CenterAndExpand">
+                <ImageButton x:Name="btnBack" Margin="0,0,60,0" BackgroundColor="White"  Clicked="BtnBack_Clicked" Source="Back.png" WidthRequest="40"  HeightRequest="40" ></ImageButton>
+                <controls:CircleImage Source="UserImage.png" 
+                                      BorderThickness="3" 
+                                      BorderColor="#9B9B9B"
+                                      BackgroundColor="White" WidthRequest="104" HeightRequest="104"/>
+                <ImageButton x:Name="btnNext" Margin="60,0,0,0" Clicked="BtnNext_Clicked" Source="Next.png" WidthRequest="40" BackgroundColor="White" HeightRequest="40" ></ImageButton>
+            </StackLayout>
+            <Label Text="{Binding Name}"  TextColor="Black" FontSize="20" HorizontalOptions="Center" HorizontalTextAlignment="Center"></Label>
+ 
+            <!--Part3 Medical Detail-->
+            <StackLayout>
+                <Button Text="MEDICAL DETAIL" HorizontalOptions="CenterAndExpand" WidthRequest="180" HeightRequest="35" BorderRadius="15" BackgroundColor="Red" TextColor="White"></Button>
+                <Grid>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="*"></RowDefinition>
+                        <RowDefinition Height="*"></RowDefinition>
+                        <RowDefinition Height="*"></RowDefinition>
+                        <RowDefinition Height="*"></RowDefinition>
+                    </Grid.RowDefinitions>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="*"></ColumnDefinition>
+                        <ColumnDefinition Width="*"></ColumnDefinition>
+                    </Grid.ColumnDefinitions>
+                    <Label Grid.Row="0" Grid.Column="0" Text="Detail1: " HorizontalOptions="CenterAndExpand" ></Label>
+                    <Label Grid.Row="0" Grid.Column="1" Text="{Binding Detail1}"></Label>
+                    <Label Grid.Row="1" Grid.Column="0" Text="Detail2: " HorizontalOptions="CenterAndExpand"></Label>
+                    <Label Grid.Row="1" Grid.Column="1" Text="{Binding Detail2}"></Label>
+                    <Label Grid.Row="2" Grid.Column="0" Text="Detail3: " HorizontalOptions="CenterAndExpand"></Label>
+                    <Label Grid.Row="2" Grid.Column="1" Text="{Binding Detail3}"></Label>
+                    <Label Grid.Row="3" Grid.Column="0" Text="Detail4: " HorizontalOptions="CenterAndExpand"></Label>
+                    <Label Grid.Row="3" Grid.Column="1" Text="{Binding Detail4}"></Label>
+                </Grid>
+            </StackLayout>
+
+            <Label Text="_________________________________________________" HorizontalOptions="CenterAndExpand"></Label>
+
+            <!--Part4 three images-->
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="30"></RowDefinition>
+                    <RowDefinition Height="40"></RowDefinition>
+                    <RowDefinition Height="30"></RowDefinition>
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition></ColumnDefinition>
+                    <ColumnDefinition></ColumnDefinition>
+                    <ColumnDefinition></ColumnDefinition>
+                </Grid.ColumnDefinitions>
+                <Image Grid.Row="0" Grid.Column="0" Source="Phonecall.png"></Image>
+                <Image Grid.Row="0" Grid.Column="2" Source="Mail.png"></Image>
+                <Image Grid.Row="2" Grid.Column="1" Source="Location.png"></Image>
+            </Grid>
+
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

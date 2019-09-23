@@ -1,0 +1,30 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Application xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="ContentPresenterDemo.App">
+    <Application.Resources>
+        <ControlTemplate x:Key="MyTemplate">
+            <StackLayout>
+                <ContentView Content="{TemplateBinding WritableContent}"/>
+                <ContentView Content="{TemplateBinding ReadonlyContent}"/>
+            </StackLayout>
+        </ControlTemplate>
+
+        <ContentView x:Key="MyContentView">
+            <StackLayout>
+                <Label Text="MyContentView" BackgroundColor="Red"></Label>
+                <!--code here...-->
+            </StackLayout>
+        </ContentView>
+
+        <ContentView x:Key="MyContentView2">
+            <StackLayout>
+                <Label Text="MyContentView2" BackgroundColor="Green"></Label>
+                <!--code here...-->
+            </StackLayout>
+        </ContentView>
+    </Application.Resources>
+</Application>

@@ -1,0 +1,171 @@
+#
+# A fatal error has been detected by the Java Runtime Environment:
+#
+#  Internal Error (relocInfo.cpp:499), pid=1800, tid=0x0000000000003420
+#  guarantee(sect != CodeBuffer::SECT_NONE) failed: lost track of this address
+#
+# JRE version: OpenJDK Runtime Environment (8.0) (build 1.8.0-25-microsoft-b00)
+# Java VM: OpenJDK 64-Bit Server VM (25.71-b00 mixed mode windows-amd64 compressed oops)
+# Failed to write core dump. Minidumps are not enabled by default on client versions of Windows
+#
+# If you would like to submit a bug report, please visit:
+#   http://bugreport.java.com/bugreport/crash.jsp
+#
+
+---------------  T H R E A D  ---------------
+
+Current thread (0x0000000027b59800):  JavaThread "C1 CompilerThread3" daemon [_thread_in_vm, id=13344, stack(0x00000000286c0000,0x00000000287c0000)]
+
+Stack: [0x00000000286c0000,0x00000000287c0000]
+[error occurred during error reporting (printing stack bounds), id 0xc0000005]
+
+Native frames: (J=compiled Java code, j=interpreted, Vv=VM code, C=native code)
+
+
+---------------  P R O C E S S  ---------------
+
+Java Threads: ( => current thread )
+=>0x0000000027b59800 JavaThread "C1 CompilerThread3" daemon [_thread_in_vm, id=13344, stack(0x00000000286c0000,0x00000000287c0000)]
+  0x0000000027b1d800 JavaThread "C2 CompilerThread2" daemon [_thread_blocked, id=15464, stack(0x00000000285c0000,0x00000000286c0000)]
+  0x0000000027af7000 JavaThread "C2 CompilerThread1" daemon [_thread_blocked, id=15488, stack(0x00000000284c0000,0x00000000285c0000)]
+  0x0000000027af3000 JavaThread "C2 CompilerThread0" daemon [_thread_in_vm, id=12692, stack(0x00000000283c0000,0x00000000284c0000)]
+  0x0000000027af1800 JavaThread "Attach Listener" daemon [_thread_blocked, id=15776, stack(0x00000000282c0000,0x00000000283c0000)]
+  0x0000000027af0800 JavaThread "Signal Dispatcher" daemon [_thread_blocked, id=10684, stack(0x00000000281c0000,0x00000000282c0000)]
+  0x0000000002c9a000 JavaThread "Finalizer" daemon [_thread_blocked, id=14700, stack(0x0000000027fc0000,0x00000000280c0000)]
+  0x0000000027ae0800 JavaThread "Reference Handler" daemon [_thread_blocked, id=13656, stack(0x0000000027ec0000,0x0000000027fc0000)]
+  0x00000000029ee800 JavaThread "main" [_thread_in_vm, id=16136, stack(0x0000000002aa0000,0x0000000002ba0000)]
+
+Other Threads:
+  0x0000000025ce8000 VMThread [stack: 0x00000000279c0000,0x0000000027ac0000] [id=4344]
+
+VM state:not at safepoint (normal execution)
+
+VM Mutex/Monitor currently owned by a thread: None
+
+heap address: 0x00000005c1600000, size: 8170 MB, Compressed Oops mode: Zero based, Oop shift amount: 3
+Narrow klass base: 0x0000000000000000, Narrow klass shift: 3
+Compressed class space size: 1073741824 Address: 0x00000007c0000000
+
+Heap:
+ PSYoungGen      total 2048K, used 349K [0x0000000715d00000, 0x0000000715f80000, 0x00000007c0000000)
+  eden space 1536K, 22% used [0x0000000715d00000,0x0000000715d57600,0x0000000715e80000)
+  from space 512K, 0% used [0x0000000715f00000,0x0000000715f00000,0x0000000715f80000)
+  to   space 512K, 0% used [0x0000000715e80000,0x0000000715e80000,0x0000000715f00000)
+ ParOldGen       total 5632K, used 0K [0x00000005c1600000, 0x00000005c1b80000, 0x0000000715d00000)
+  object space 5632K, 0% used [0x00000005c1600000,0x00000005c1600000,0x00000005c1b80000)
+ Metaspace       used 2126K, capacity 4480K, committed 4480K, reserved 1056768K
+  class space    used 223K, capacity 384K, committed 384K, reserved 1048576K
+
+Card table byte_map: [0x0000000012060000,0x0000000013060000] byte_map_base: 0x000000000f255000
+
+Marking Bits: (ParMarkBitMap*) 0x00000000733f8f30
+ Begin Bits: [0x0000000014310000, 0x000000001c2b8000)
+ End Bits:   [0x000000001c2b8000, 0x0000000024260000)
+
+Polling page: 0x0000000000d60000
+
+CodeCache: size=245760Kb used=1017Kb max_used=1028Kb free=244742Kb
+ bounds [0x0000000002ca0000, 0x0000000002f10000, 0x0000000011ca0000]
+ total_blobs=202 nmethods=0 adapters=132
+ compilation: enabled
+
+Compilation events (0 events):
+No events
+
+GC Heap History (0 events):
+No events
+
+Deoptimization events (0 events):
+No events
+
+Classes redefined (0 events):
+No events
+
+Internal exceptions (2 events):
+Event: 0.030 Thread 0x00000000029ee800 Exception <a 'java/lang/NoSuchMethodError': Method sun.misc.Unsafe.defineClass(Ljava/lang/String;[BII)Ljava/lang/Class; name or signature does not match> (0x0000000715d07cd8) thrown at [D:\j\worksp~1\openjd~3\jdk8u\hotspot\src\share\vm\prims\jni.cpp, line
+Event: 0.030 Thread 0x00000000029ee800 Exception <a 'java/lang/NoSuchMethodError': Method sun.misc.Unsafe.prefetchRead(Ljava/lang/Object;J)V name or signature does not match> (0x0000000715d07fc0) thrown at [D:\j\worksp~1\openjd~3\jdk8u\hotspot\src\share\vm\prims\jni.cpp, line 4012]
+
+Events (10 events):
+Event: 0.069 loading class sun/misc/Launcher$AppClassLoader$1 done
+Event: 0.070 loading class java/lang/SystemClassLoaderAction
+Event: 0.070 loading class java/lang/SystemClassLoaderAction done
+Event: 0.070 Thread 0x0000000027af0800 Thread added: 0x0000000027af0800
+Event: 0.071 Thread 0x0000000027af1800 Thread added: 0x0000000027af1800
+Event: 0.071 Thread 0x0000000027af3000 Thread added: 0x0000000027af3000
+Event: 0.071 Thread 0x0000000027af7000 Thread added: 0x0000000027af7000
+Event: 0.071 Thread 0x0000000027b1d800 Thread added: 0x0000000027b1d800
+Event: 0.071 Thread 0x0000000027b59800 Thread added: 0x0000000027b59800
+Event: 0.072 loading class java/lang/invoke/MethodHandleImpl
+
+
+Dynamic libraries:
+0x00007ff6756c0000 - 0x00007ff6756c7000 	C:\Program Files\Android\Jdk\microsoft_dist_openjdk_1.8.0.25\bin\javac.exe
+0x00007ffb82120000 - 0x00007ffb82310000 	C:\Windows\SYSTEM32\ntdll.dll
+0x00007ffb81270000 - 0x00007ffb81322000 	C:\Windows\System32\KERNEL32.DLL
+0x00007ffb7f880000 - 0x00007ffb7fb23000 	C:\Windows\System32\KERNELBASE.dll
+0x00007ffb69360000 - 0x00007ffb6938f000 	C:\Program Files\Android\Jdk\microsoft_dist_openjdk_1.8.0.25\bin\jli.dll
+0x0000000073560000 - 0x0000000073631000 	C:\Program Files\Android\Jdk\microsoft_dist_openjdk_1.8.0.25\bin\MSVCR100.dll
+0x00007ffb80500000 - 0x00007ffb805a3000 	C:\Windows\System32\ADVAPI32.dll
+0x00007ffb802c0000 - 0x00007ffb8035e000 	C:\Windows\System32\msvcrt.dll
+0x00007ffb80ad0000 - 0x00007ffb80b67000 	C:\Windows\System32\sechost.dll
+0x00007ffb80f30000 - 0x00007ffb81050000 	C:\Windows\System32\RPCRT4.dll
+0x00007ffb81470000 - 0x00007ffb81603000 	C:\Windows\System32\USER32.dll
+0x00007ffb7f830000 - 0x00007ffb7f851000 	C:\Windows\System32\win32u.dll
+0x00007ffb74b20000 - 0x00007ffb74da5000 	C:\Windows\WinSxS\amd64_microsoft.windows.common-controls_6595b64144ccf1df_6.0.18362.295_none_e6c3acbd13101292\COMCTL32.dll
+0x00007ffb804d0000 - 0x00007ffb804f6000 	C:\Windows\System32\GDI32.dll
+0x00007ffb80b70000 - 0x00007ffb80ea6000 	C:\Windows\System32\combase.dll
+0x00007ffb7fda0000 - 0x00007ffb7ff34000 	C:\Windows\System32\gdi32full.dll
+0x00007ffb80050000 - 0x00007ffb8014a000 	C:\Windows\System32\ucrtbase.dll
+0x00007ffb7fb30000 - 0x00007ffb7fbce000 	C:\Windows\System32\msvcp_win.dll
+0x00007ffb7fd20000 - 0x00007ffb7fda0000 	C:\Windows\System32\bcryptPrimitives.dll
+0x00007ffb805b0000 - 0x00007ffb805de000 	C:\Windows\System32\IMM32.DLL
+0x0000000073480000 - 0x0000000073551000 	C:\Program Files\Android\Jdk\microsoft_dist_openjdk_1.8.0.25\jre\bin\msvcr100.dll
+0x0000000072c30000 - 0x0000000073475000 	C:\Program Files\Android\Jdk\microsoft_dist_openjdk_1.8.0.25\jre\bin\server\jvm.dll
+0x00007ffb804c0000 - 0x00007ffb804c8000 	C:\Windows\System32\PSAPI.DLL
+0x00007ffb6ae50000 - 0x00007ffb6ae59000 	C:\Windows\SYSTEM32\WSOCK32.dll
+0x00007ffb7ca70000 - 0x00007ffb7ca94000 	C:\Windows\SYSTEM32\WINMM.dll
+0x00007ffb7d860000 - 0x00007ffb7d86a000 	C:\Windows\SYSTEM32\VERSION.dll
+0x00007ffb81050000 - 0x00007ffb810bf000 	C:\Windows\System32\WS2_32.dll
+0x00007ffb7ca40000 - 0x00007ffb7ca6d000 	C:\Windows\SYSTEM32\winmmbase.dll
+0x00007ffb80150000 - 0x00007ffb8019a000 	C:\Windows\System32\cfgmgr32.dll
+0x00007ffb6aaa0000 - 0x00007ffb6aaaf000 	C:\Program Files\Android\Jdk\microsoft_dist_openjdk_1.8.0.25\jre\bin\verify.dll
+0x00007ffb69330000 - 0x00007ffb69359000 	C:\Program Files\Android\Jdk\microsoft_dist_openjdk_1.8.0.25\jre\bin\java.dll
+0x00007ffb6a120000 - 0x00007ffb6a136000 	C:\Program Files\Android\Jdk\microsoft_dist_openjdk_1.8.0.25\jre\bin\zip.dll
+0x00007ffb81790000 - 0x00007ffb81e72000 	C:\Windows\System32\SHELL32.dll
+0x00007ffb81610000 - 0x00007ffb816b9000 	C:\Windows\System32\shcore.dll
+0x00007ffb7f0b0000 - 0x00007ffb7f82c000 	C:\Windows\System32\windows.storage.dll
+0x00007ffb7f040000 - 0x00007ffb7f05f000 	C:\Windows\System32\profapi.dll
+0x00007ffb7f060000 - 0x00007ffb7f0aa000 	C:\Windows\System32\powrprof.dll
+0x00007ffb7eff0000 - 0x00007ffb7f000000 	C:\Windows\System32\UMPDC.dll
+0x00007ffb80ed0000 - 0x00007ffb80f22000 	C:\Windows\System32\shlwapi.dll
+0x00007ffb7f020000 - 0x00007ffb7f031000 	C:\Windows\System32\kernel.appcore.dll
+0x00007ffb7f860000 - 0x00007ffb7f877000 	C:\Windows\System32\cryptsp.dll
+
+VM Arguments:
+jvm_args: -Dapplication.home=C:\Program Files\Android\Jdk\microsoft_dist_openjdk_1.8.0.25 -Xms8m -Dfile.encoding=UTF8 
+java_command: com.sun.tools.javac.Main -d obj\Debug\90\android\bin\classes -classpath C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\Common7\IDE\ReferenceAssemblies\Microsoft\Framework\MonoAndroid\v9.0\mono.android.jar;C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\MSBuild\Xamarin\Android\java_runtime_fastdev.jar;obj\Debug\90\lp\0\jl\formsviewgroup.jar;obj\Debug\90\lp\1\jl\android.arch.core.common.jar;obj\Debug\90\lp\10\jl\bin\classes.jar;obj\Debug\90\lp\11\jl\com.android.support.collections.jar;obj\Debug\90\lp\12\jl\bin\classes.jar;obj\Debug\90\lp\13\jl\bin\classes.jar;obj\Debug\90\lp\14\jl\bin\classes.jar;obj\Debug\90\lp\15\jl\bin\classes.jar;obj\Debug\90\lp\16\jl\bin\classes.jar;obj\Debug\90\lp\17\jl\bin\classes.jar;obj\Debug\90\lp\18\jl\bin\classes.jar;obj\Debug\90\lp\19\jl\bin\classes.jar;obj\Debug\90\lp\2\jl\bin\classes.jar;obj\Debug\90\lp\20\jl\bin\classes.jar;obj\Debug\90\lp\21\jl\bin\classes.jar;obj\Debug\90\lp\22\jl\bin\classes.jar;obj\Debug\90\lp\23\jl\bin\classes.jar;obj\Debug\90\lp\24\jl\bin\classes.jar;obj\Debug\90\lp\25\jl\bin\classes.jar;obj\Debug\90\lp\26\jl\bin\classes.jar;obj\Debug\90\lp\27\jl\bin\classes.jar;obj\Debug\90\lp\28\jl\bin\classes.jar;obj\Debug\90\lp\29\jl\bin\classes.jar;obj\Debug\90\lp\3\jl\android.arch.lifecycle.common.jar;obj\Debug\90\lp\30\jl\bin\classes.jar;obj\Debug\90\lp\32\jl\bin\classes.jar;obj\Debug\90\lp\33\jl\bin\classes.jar;obj\Debug\90\lp\34\jl\bin\classes.jar;obj\Debug\90\lp\35\jl\bin\classes.jar;obj\Debug\90\lp\36\jl\bin\classes.jar;obj\Debug\90\lp\37\jl\bin\classes.jar;obj\Debug\90\lp\38\jl\bin\classes.jar;obj\Debug\90\lp\39\jl\bin\classes.jar;obj\Debug\90\lp\4\jl\bin\classes.jar;obj\Debug\90\lp\5\jl\bin\classes.jar;obj\Debug\90\lp\6\jl\bin\classes.jar;obj\Debug\90\lp\7\jl\bin\classes.jar;obj\Debug\90\lp\8\jl\bin\classes.jar;obj\Debug\90\lp\9\jl\com.android.support.support-annotations.jar -bootclasspath C:\Program Files (x86)\Android\android-sdk\platforms\android-28\android.jar -encod
+java_class_path (initial): C:\Program Files\Android\Jdk\microsoft_dist_openjdk_1.8.0.25/lib/tools.jar;C:\Program Files\Android\Jdk\microsoft_dist_openjdk_1.8.0.25/classes
+Launcher Type: SUN_STANDARD
+
+Environment Variables:
+PATH=C:\Program Files\Android\Jdk\microsoft_dist_openjdk_1.8.0.25\bin;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files\dotnet\;C:\Program Files\Microsoft SQL Server\130\Tools\Binn\;C:\Program Files\Microsoft SQL Server\Client SDK\ODBC\170\Tools\Binn\;C:\Program Files\Git\cmd;C:\Program Files\TortoiseGit\bin;C:\Users\wendyz\AppData\Local\Microsoft\WindowsApps;
+USERNAME=wendyz
+OS=Windows_NT
+PROCESSOR_IDENTIFIER=Intel64 Family 6 Model 60 Stepping 3, GenuineIntel
+
+
+
+---------------  S Y S T E M  ---------------
+
+OS: Windows 10.0 , 64 bit Build 18362 (10.0.18362.86)
+
+CPU:total 8 (initial active 8) (4 cores per cpu, 2 threads per core) family 6 model 60 stepping 3, cmov, cx8, fxsr, mmx, sse, sse2, sse3, ssse3, sse4.1, sse4.2, popcnt, avx, avx2, aes, clmul, erms, lzcnt, ht, tsc, tscinvbit, bmi1, bmi2
+
+Memory: 4k page, physical 33457272k(25486660k free), swap 38438008k(29757348k free)
+
+vm_info: OpenJDK 64-Bit Server VM (25.71-b00) for windows-amd64 JRE (1.8.0-25-microsoft-b00), built on Feb  7 2019 20:09:14 by "builder" with MS VC++ 10.0 (VS2010)
+
+time: Fri Sep 20 15:59:24 2019
+timezone: China Standard Time
+elapsed time: 0 seconds (0d 0h 0m 0s)
+

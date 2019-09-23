@@ -1,0 +1,14 @@
+D:\Xamarin Sample\Case Sample\ContentPresenterDemo\ContentPresenterDemo\ContentPresenterDemo\bin\Debug\netstandard2.0\ContentPresenterDemo.deps.json
+D:\Xamarin Sample\Case Sample\ContentPresenterDemo\ContentPresenterDemo\ContentPresenterDemo\bin\Debug\netstandard2.0\ContentPresenterDemo.dll
+D:\Xamarin Sample\Case Sample\ContentPresenterDemo\ContentPresenterDemo\ContentPresenterDemo\bin\Debug\netstandard2.0\ContentPresenterDemo.pdb
+D:\Xamarin Sample\Case Sample\ContentPresenterDemo\ContentPresenterDemo\ContentPresenterDemo\obj\Debug\netstandard2.0\ContentPresenterDemo.csprojAssemblyReference.cache
+D:\Xamarin Sample\Case Sample\ContentPresenterDemo\ContentPresenterDemo\ContentPresenterDemo\obj\Debug\netstandard2.0\ActivatableContent.xaml.g.cs
+D:\Xamarin Sample\Case Sample\ContentPresenterDemo\ContentPresenterDemo\ContentPresenterDemo\obj\Debug\netstandard2.0\App.xaml.g.cs
+D:\Xamarin Sample\Case Sample\ContentPresenterDemo\ContentPresenterDemo\ContentPresenterDemo\obj\Debug\netstandard2.0\CustomContentView.xaml.g.cs
+D:\Xamarin Sample\Case Sample\ContentPresenterDemo\ContentPresenterDemo\ContentPresenterDemo\obj\Debug\netstandard2.0\MainPage.xaml.g.cs
+D:\Xamarin Sample\Case Sample\ContentPresenterDemo\ContentPresenterDemo\ContentPresenterDemo\obj\Debug\netstandard2.0\ContentPresenterDemo.csproj.CoreCompileInputs.cache
+D:\Xamarin Sample\Case Sample\ContentPresenterDemo\ContentPresenterDemo\ContentPresenterDemo\obj\Debug\netstandard2.0\ContentPresenterDemo.AssemblyInfoInputs.cache
+D:\Xamarin Sample\Case Sample\ContentPresenterDemo\ContentPresenterDemo\ContentPresenterDemo\obj\Debug\netstandard2.0\ContentPresenterDemo.AssemblyInfo.cs
+D:\Xamarin Sample\Case Sample\ContentPresenterDemo\ContentPresenterDemo\ContentPresenterDemo\obj\Debug\netstandard2.0\XamlC.stamp
+D:\Xamarin Sample\Case Sample\ContentPresenterDemo\ContentPresenterDemo\ContentPresenterDemo\obj\Debug\netstandard2.0\ContentPresenterDemo.dll
+D:\Xamarin Sample\Case Sample\ContentPresenterDemo\ContentPresenterDemo\ContentPresenterDemo\obj\Debug\netstandard2.0\ContentPresenterDemo.pdb
