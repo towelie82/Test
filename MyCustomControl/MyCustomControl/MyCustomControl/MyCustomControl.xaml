@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentView xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="MyCustomControl.MyCustomControl.MyCustomControl">
+    <ContentView.Content>
+        <StackLayout>
+            <Label x:Name="Title" BackgroundColor="Red" TextColor="White" HeightRequest="60" Text="A"/>
+            <Label BackgroundColor="Green" TextColor="Black" HeightRequest="60" Text="B"></Label>
+        </StackLayout>
+    </ContentView.Content>
+</ContentView>
