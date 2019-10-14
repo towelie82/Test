@@ -1,0 +1,19 @@
+
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <Button
+        android:id="@+id/btn_TextLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Text Layout"/>
+    <Button
+        android:id="@+id/btn_GralleryLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btn_TextLayout"
+        android:text="Grallery Layout"/>
+</RelativeLayout>
