@@ -3,6 +3,7 @@ using System;
 using System.Collections.Generic;
 using System.Text;
 using Xamarin.Forms;
+using static MasterDetailsDemo.App;
 
 namespace MasterDetailsDemo
 {
@@ -29,9 +30,17 @@ namespace MasterDetailsDemo
             var item = e.SelectedItem as MasterPageItem;
             if (item != null)
             {
-                Detail = new NavigationPage((Page)Activator.CreateInstance(item.TargetType));
-                masterPage.ListView.SelectedItem = null;
-                IsPresented = false;
+                if (item.Title == "Logout")
+                {
+                    Application.Current.MainPage =new LogoutPageCS();
+                }
+                else
+                {
+                    Detail = new NavigationPage((Page)Activator.CreateInstance(item.TargetType));
+                    masterPage.ListView.SelectedItem = null;
+                    IsPresented = false;
+                }
+
             }
         }
     }

@@ -18,7 +18,7 @@ namespace MasterDetailsDemo.CS
                     {
                         Text="Client Information goes here",
                         HorizontalOptions=LayoutOptions.Center,
-                       VerticalOptions=LayoutOptions.CenterAndExpand
+                        VerticalOptions=LayoutOptions.CenterAndExpand
                     }
                 }
             };
