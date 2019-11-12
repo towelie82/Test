@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="PageModelDemo.MainPage">
+
+    <StackLayout>
+        <!-- Place new controls here -->
+        <Button x:Name="btn_Page1" Text="Page1" Clicked="btn_Page1_Clicked"></Button>
+        <Button x:Name="btn_Page2" Text="Page2" Clicked="btn_Page2_Clicked"></Button>
+        <Button x:Name="btn_Page3" Text="Page3" Clicked="btn_Page3_Clicked"></Button>
+    </StackLayout>
+
+</ContentPage>
