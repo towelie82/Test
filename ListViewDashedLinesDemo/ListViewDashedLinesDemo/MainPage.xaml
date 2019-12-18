@@ -1,0 +1,33 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage
+    x:Class="ListViewDashedLinesDemo.MainPage"
+    xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d">
+
+    <ListView
+        CachingStrategy="RecycleElement"
+        HasUnevenRows="True"
+        ItemsSource="{Binding Items}"
+        SeparatorVisibility="None">
+
+        <ListView.ItemTemplate>
+            <DataTemplate>
+                <ViewCell>
+                    <StackLayout Padding="20">
+                        <StackLayout Padding="5" BackgroundColor="LimeGreen">
+                            <Label Style="{DynamicResource ListItemTextStyle}" Text="{Binding .}" />
+                            <Label Style="{DynamicResource ListItemDetailTextStyle}" Text="{Binding .}" />
+                        </StackLayout>
+
+                        <!--<Label x:Name="label" />-->
+                        
+
+                    </StackLayout>
+                </ViewCell>
+            </DataTemplate>
+        </ListView.ItemTemplate>
+    </ListView>
+</ContentPage>

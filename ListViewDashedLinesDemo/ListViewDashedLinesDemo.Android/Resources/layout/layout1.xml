@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/parent"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:gravity="center"
+    android:orientation="vertical">
+    <!--    <TextView
+        android:id="@+id/text"
+        android:textSize="18sp"
+        android:textAlignment="center"
+        android:text="click to show toast at top"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" 
+    />
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_marginTop="10dp"
+        android:layout_height="5dp"
+        android:src="@drawable/dotted"
+        android:layerType="software" />-->
+    <ListView
+        android:id="@+id/listview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:dividerHeight="10px"
+        android:divider="@drawable/dotted"
+        android:layerType="software"
+    />
+</LinearLayout>
