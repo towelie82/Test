@@ -1,0 +1,33 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage
+    x:Class="HidekeyboardOfEntryDemo.MainPage"
+    xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             xmlns:hidekeyboardofentrydemo="clr-namespace:HidekeyboardOfEntryDemo"
+             mc:Ignorable="d">
+
+    <ListView
+        AbsoluteLayout.LayoutBounds="0,0,1,1"
+        AbsoluteLayout.LayoutFlags="All"
+        HorizontalOptions="FillAndExpand"
+        ItemsSource="{Binding _list}"
+        VerticalOptions="FillAndExpand">
+        <ListView.ItemTemplate>
+            <DataTemplate>
+                <ViewCell>
+                    <StackLayout Orientation="Horizontal">
+                        <Label Text="Name" />
+                        <hidekeyboardofentrydemo:CustomEntry Placeholder="Name" />
+                        <Label FontSize="50" Text="+">
+                            <Label.GestureRecognizers>
+                                <TapGestureRecognizer CommandParameter="{Binding Id}" Tapped="AddMore_Tapped" />
+                            </Label.GestureRecognizers>
+                        </Label>
+                    </StackLayout>
+                </ViewCell>
+            </DataTemplate>
+        </ListView.ItemTemplate>
+    </ListView>
+</ContentPage>
