@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage
+    x:Class="XamarinTest.MainPage"
+    xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d">
+
+    <StackLayout>
+        <ScrollView>
+            <StackLayout>
+                <Label Text="Godzina" Grid.Column="3" Grid.ColumnSpan="3"  Grid.Row="8"  TextColor="Black" Font="Bold,14"></Label>
+                <TimePicker x:Name="StartHour"
+                Format="T" Grid.Row="9" Grid.ColumnSpan="3"  BindingContext="{Binding StartHour}" HorizontalOptions="FillAndExpand">
+                </TimePicker>
+                <TimePicker x:Name="EndHour"
+                Format="T" Grid.Row="9" Grid.ColumnSpan="3" BindingContext="{Binding EndHour}"  Grid.Column="3"  HorizontalOptions="FillAndExpand">
+                </TimePicker>
+                <Label Text="Miejsce spotkania" Grid.Row="10" Grid.ColumnSpan="6"  TextColor="Black" Font="Bold,14"></Label>
+                <!--<controls:CustomEntry x:Name="Place" Grid.ColumnSpan="6" Text="{Binding Place}" Grid.Row="11"></controls:CustomEntry>-->
+                <Label Text="Przypomnienie" Grid.Row="12" Grid.ColumnSpan="6"  TextColor="Black" Font="Bold,14"></Label>
+                <TimePicker x:Name="Reminder"
+                Format="T" Grid.Row="13" BindingContext="{Binding Reminder}" Grid.ColumnSpan="6"  HorizontalOptions="FillAndExpand">
+                </TimePicker>
+                <Button x:Name="MakeMeeting"  Command="{Binding CreateCommand}" Text="Stworz spotkanie" Grid.ColumnSpan="6"   BackgroundColor="#034ad7" BorderRadius="14" TextColor="FloralWhite" HeightRequest="50" VerticalOptions="Start" Grid.Row="14"></Button>
+            </StackLayout>
+        </ScrollView>
+    </StackLayout>
+
+</ContentPage>
