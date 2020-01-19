@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage
+    x:Class="TabbedPageDemo.Views.Tab1_Page"
+    xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+    xmlns:local="clr-namespace:Xam.Plugin.TabView;assembly=Xam.Plugin.TabView"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d">
+    <ContentPage.Content>
+        <local:TabViewControl>
+            <local:TabViewControl.ItemSource>
+                <local:TabItem HeaderText="SUBTAB1">
+                    <StackLayout VerticalOptions="Start" Padding="10">
+                        <Button
+                        BackgroundColor="White"                    
+                        Text="List Item"
+                        TextColor="Black"/>
+                    </StackLayout>                                                
+                </local:TabItem>
+                <local:TabItem HeaderText="SUBTAB2">
+                    <Image Source="pink.jpg" />
+                </local:TabItem>
+            </local:TabViewControl.ItemSource>
+        </local:TabViewControl>
+    </ContentPage.Content>
+</ContentPage>

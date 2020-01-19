@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<TabbedPage
+    x:Class="TabbedPageDemo.MainPage"
+    xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:Views="clr-namespace:TabbedPageDemo.Views"
+    xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    BarBackgroundColor="Blue"
+    BarTextColor="White"
+    mc:Ignorable="d">
+
+    <Views:Tab1_Page Title="TAB1" />
+    <Views:Tab2_Page Title="TAB2" />
+    <Views:Tab3_Page Title="TAB3" />
+
+</TabbedPage>
