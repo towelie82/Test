@@ -1,0 +1,156 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage
+    x:Class="XamarinDemo.PassingData_Navigating.Test.MainPage"
+    xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d">
+    <ContentPage.Content>
+        <Grid>
+            <Grid.RowDefinitions>
+
+                <RowDefinition Height="30" />
+                <RowDefinition Height="70" />
+                <RowDefinition Height="30" />
+                <RowDefinition Height="20" />
+                <RowDefinition Height="70" />
+                <RowDefinition Height="30" />
+                <RowDefinition Height="30" />
+
+                <RowDefinition Height="10" />
+                <RowDefinition Height="70" />
+                <RowDefinition Height="30" />
+                <RowDefinition Height="20" />
+                <RowDefinition Height="70" />
+                <RowDefinition Height="30" />
+                <RowDefinition Height="30" />
+
+                <RowDefinition Height="10" />
+                <RowDefinition Height="70" />
+                <RowDefinition Height="30" />
+                <RowDefinition Height="30" />
+
+                <RowDefinition Height="10" />
+                <RowDefinition Height="70" />
+                <RowDefinition Height="30" />
+                <RowDefinition Height="20" />
+                <RowDefinition Height="70" />
+                <RowDefinition Height="30" />
+                <RowDefinition Height="30" />
+
+                <RowDefinition Height="10" />
+                <RowDefinition Height="70" />
+                <RowDefinition Height="30" />
+                <RowDefinition Height="30" />
+
+                <RowDefinition Height="10" />
+                <RowDefinition Height="50" />
+                <RowDefinition Height="20" />
+
+            </Grid.RowDefinitions>
+
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="30" />
+                <ColumnDefinition Width="auto" />
+                <ColumnDefinition Width="60" />
+                <ColumnDefinition Width="auto" />
+                <ColumnDefinition Width="auto" />
+                <ColumnDefinition Width="70" />
+            </Grid.ColumnDefinitions>
+
+            <!--  OFFLINE TOOL  -->
+            <ImageButton
+                x:Name="btnOffline"
+                Grid.Row="1"
+                Grid.Column="1"
+                BackgroundColor="Transparent"
+                Clicked="btnOffline_Clicked"
+                IsEnabled="True"
+                Source="monkeyicon.png" />
+            <Label
+                Grid.Row="2"
+                Grid.Column="1"
+                Margin="15,0,0,0"
+                Text="Offline Tool" />
+            <Label
+                Grid.Row="1"
+                Grid.Column="3"
+                Text="Start Date Time:" />
+            <Label
+                Grid.Row="1"
+                Grid.Column="3"
+                Margin="0,40,0,0"
+                Text="End Date Time:" />
+
+            <Label
+                x:Name="lblStartDT"
+                Grid.Row="1"
+                Grid.RowSpan="2"
+                Grid.Column="4"
+                Grid.ColumnSpan="2"
+                Text="" />
+            <Label
+                x:Name="lblEndDT"
+                Grid.Row="1"
+                Grid.RowSpan="2"
+                Grid.Column="4"
+                Grid.ColumnSpan="2"
+                Margin="0,40,0,0"
+                Text="" />
+
+
+            <!--  ONLINE TOOL  -->
+            <ImageButton
+                x:Name="btnOnline"
+                Grid.Row="8"
+                Grid.Column="1"
+                BackgroundColor="Transparent"
+                Clicked="btnOnline_Clicked"
+                IsEnabled="True"
+                Source="star_small.png" />
+            <Label
+                Grid.Row="9"
+                Grid.Column="1"
+                Margin="19,0,0,0"
+                Text="Online Tool" />
+
+            <Label
+                Grid.Row="8"
+                Grid.Column="3"
+                Text="Start Date Time:" />
+            <Label
+                Grid.Row="8"
+                Grid.Column="3"
+                Margin="7,40,0,0"
+                Text="End Date Time:" />
+            <Label
+                Grid.Row="9"
+                Grid.Column="3"
+                Margin="58,0,0,0"
+                Text="Status:" />
+
+            <Label
+                x:Name="lblOnlineStartDT"
+                Grid.Row="8"
+                Grid.RowSpan="2"
+                Grid.Column="4"
+                Grid.ColumnSpan="2"
+                Text="{Binding StartTime}" />
+            <Label
+                x:Name="lblOnlineEndDT"
+                Grid.Row="8"
+                Grid.RowSpan="2"
+                Grid.Column="4"
+                Grid.ColumnSpan="2"
+                Margin="0,40,0,0"
+                Text="{Binding EndTime}" />
+            <Label
+                x:Name="txtOnlineStatus"
+                Grid.Row="9"
+                Grid.Column="4"
+                Text="NOT STARTED"
+                TextColor="Red" />
+        </Grid>
+    </ContentPage.Content>
+</ContentPage>
