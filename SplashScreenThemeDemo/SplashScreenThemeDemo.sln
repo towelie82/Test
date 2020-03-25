@@ -1,0 +1,35 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29709.97
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SplashScreenThemeDemo.Android", "SplashScreenThemeDemo\SplashScreenThemeDemo.Android\SplashScreenThemeDemo.Android.csproj", "{0E2EF61F-BEDE-4C1C-986E-394D15415013}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SplashScreenThemeDemo", "SplashScreenThemeDemo\SplashScreenThemeDemo\SplashScreenThemeDemo.csproj", "{58C70553-6A2F-41CD-8909-A8390CC5DE85}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{0E2EF61F-BEDE-4C1C-986E-394D15415013}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0E2EF61F-BEDE-4C1C-986E-394D15415013}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0E2EF61F-BEDE-4C1C-986E-394D15415013}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{0E2EF61F-BEDE-4C1C-986E-394D15415013}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0E2EF61F-BEDE-4C1C-986E-394D15415013}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0E2EF61F-BEDE-4C1C-986E-394D15415013}.Release|Any CPU.Deploy.0 = Release|Any CPU
+		{58C70553-6A2F-41CD-8909-A8390CC5DE85}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{58C70553-6A2F-41CD-8909-A8390CC5DE85}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{58C70553-6A2F-41CD-8909-A8390CC5DE85}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{58C70553-6A2F-41CD-8909-A8390CC5DE85}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{58C70553-6A2F-41CD-8909-A8390CC5DE85}.Release|Any CPU.Build.0 = Release|Any CPU
+		{58C70553-6A2F-41CD-8909-A8390CC5DE85}.Release|Any CPU.Deploy.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {B2704733-87C8-4EC6-9476-8BB7E7CFD6B5}
+	EndGlobalSection
+EndGlobal
