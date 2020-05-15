@@ -1,0 +1,35 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29709.97
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "inverterDemo.Android", "inverterDemo\inverterDemo.Android\inverterDemo.Android.csproj", "{6ECC3C0F-0C9F-4E0B-8186-C2E70BA9B87A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "inverterDemo", "inverterDemo\inverterDemo\inverterDemo.csproj", "{9FE0A00A-81F1-46BB-BBF8-F032BA4D4915}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{6ECC3C0F-0C9F-4E0B-8186-C2E70BA9B87A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6ECC3C0F-0C9F-4E0B-8186-C2E70BA9B87A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6ECC3C0F-0C9F-4E0B-8186-C2E70BA9B87A}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{6ECC3C0F-0C9F-4E0B-8186-C2E70BA9B87A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6ECC3C0F-0C9F-4E0B-8186-C2E70BA9B87A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6ECC3C0F-0C9F-4E0B-8186-C2E70BA9B87A}.Release|Any CPU.Deploy.0 = Release|Any CPU
+		{9FE0A00A-81F1-46BB-BBF8-F032BA4D4915}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9FE0A00A-81F1-46BB-BBF8-F032BA4D4915}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9FE0A00A-81F1-46BB-BBF8-F032BA4D4915}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{9FE0A00A-81F1-46BB-BBF8-F032BA4D4915}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9FE0A00A-81F1-46BB-BBF8-F032BA4D4915}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9FE0A00A-81F1-46BB-BBF8-F032BA4D4915}.Release|Any CPU.Deploy.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {D8088F14-A7DD-469F-BC81-EAB030F15267}
+	EndGlobalSection
+EndGlobal
