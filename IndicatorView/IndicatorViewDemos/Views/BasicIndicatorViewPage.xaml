@@ -1,0 +1,40 @@
+﻿<?xml version="1.0" encoding="UTF-8" ?>
+<ContentPage
+    x:Class="IndicatorViewDemos.Views.BasicIndicatorViewPage"
+    xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:viewmodels="clr-namespace:IndicatorViewDemos.ViewModels"
+    Title="Basic IndicatorView demo">
+
+    <ContentPage.Content>
+        <StackLayout>
+            <CarouselView
+                x:Name="guidaView"
+                IndicatorView="indicatorView"
+                ItemsSource="{Binding items}">
+                <CarouselView.ItemTemplate>
+                    <DataTemplate>
+                        <StackLayout>
+                            <Label
+                                FontAttributes="Bold"
+                                FontSize="Large"
+                                Text="{Binding Title}" />
+                            <Label
+                                FontAttributes="Italic"
+                                FontSize="Small"
+                                Text="{Binding Subtitle}" />
+                            <Image Source="{Binding ImageSource}" />
+                        </StackLayout>
+                    </DataTemplate>
+                </CarouselView.ItemTemplate>
+            </CarouselView>
+            <IndicatorView
+                x:Name="indicatorView"
+                Margin="0,0,0,40"
+                HorizontalOptions="Center"
+                IndicatorColor="LightGray"
+                IndicatorsShape="Square"
+                SelectedIndicatorColor="DarkGray" />
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
