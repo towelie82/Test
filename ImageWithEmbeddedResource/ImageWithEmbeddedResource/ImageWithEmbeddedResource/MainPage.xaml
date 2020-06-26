@@ -1,0 +1,45 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage
+    x:Class="ImageWithEmbeddedResource.MainPage"
+    xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d">
+
+    <Frame BackgroundColor="White" BorderColor="Teal">
+        <Grid>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="100" />
+            </Grid.ColumnDefinitions>
+
+            <Grid.RowDefinitions>
+                <RowDefinition Height="100" />
+            </Grid.RowDefinitions>
+
+            <Image
+                x:Name="imgEnglisch"
+                Grid.Row="0"
+                Grid.Column="0"
+                Aspect="AspectFill"
+                BackgroundColor="White"
+                HorizontalOptions="CenterAndExpand"
+                VerticalOptions="CenterAndExpand">
+                <Image.GestureRecognizers>
+                    <TapGestureRecognizer NumberOfTapsRequired="1" Tapped="IbtnEnglisch_Clicked" />
+                </Image.GestureRecognizers>
+                <Image.Source>
+                    <OnPlatform x:TypeArguments="ImageSource">
+                        <OnPlatform.iOS>
+                            <FileImageSource File="england_flag" />
+                        </OnPlatform.iOS>
+                        <OnPlatform.Android>
+                            <FileImageSource File="pink.jpg" />
+                        </OnPlatform.Android>
+                    </OnPlatform>
+                </Image.Source>
+            </Image>
+        </Grid>
+    </Frame>
+
+</ContentPage>
