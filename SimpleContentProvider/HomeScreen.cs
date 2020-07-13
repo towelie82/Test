@@ -1,0 +1,138 @@
+﻿using Android.App;
+using Android.Database;
+using Android.OS;
+using Android.Widget;
+using Android.Content;
+using Android.Net;
+
+namespace CursorTableAdapter
+{
+    [Activity(Label = "SimpleContentProvider", MainLauncher = true, Icon = "@drawable/icon")]
+    public class HomeScreen : Activity
+    { //, LoaderManager.ILoaderCallbacks {
+
+        ListView listView;
+        ICursor cursor;
+        SimpleCursorAdapter adapter;
+
+        protected override void OnCreate(Bundle bundle)
+        {
+            base.OnCreate(bundle);
+            SetContentView(Resource.Layout.HomeScreen);
+            listView = FindViewById<ListView>(Resource.Id.List);
+
+            //string[] projection = new string[] { VegetableProvider.InterfaceConsts.Id, VegetableProvider.InterfaceConsts.Name };
+            //string[] fromColumns = new string[] { VegetableProvider.InterfaceConsts.Name };
+            //int[] toControlIds = new int[] { Android.Resource.Id.Text1 };
+
+            //// ManagedQuery is deprecated in Honeycomb (3.0, API11)
+            //cursor = ManagedQuery(VegetableProvider.CONTENT_URI, projection, null, null, null);
+
+            //// ContentResolver requires you to close the query yourself
+            ////cursor = ContentResolver.Query(VegetableProvider.CONTENT_URI, projection, null, null, null);
+            ////StartManagingCursor(cursor);
+
+            //// CursorLoader introduced in Honeycomb (3.0, API11)
+            //var loader = new CursorLoader(this,
+            //    VegetableProvider.CONTENT_URI, projection, null, null, null);
+            //cursor = (ICursor)loader.LoadInBackground();
+
+            string[] projection = new string[] { VegetableProvider.InterfaceConsts.Id, VegetableProvider.InterfaceConsts.Token };
+            string[] fromColumns = new string[] { VegetableProvider.InterfaceConsts.Token };
+            int[] toControlIds = new int[] { Android.Resource.Id.Text1 };
+         
+            // CursorLoader introduced in Honeycomb (3.0, API_11)
+            var loader = new CursorLoader(this, VegetableProvider.CONTENT_URI, projection, null, null, null);
+            var cursor = (ICursor)loader.LoadInBackground();
+            if (cursor != null)
+            {
+                while (cursor.MoveToNext())
+                {
+                    string s = cursor.GetString(cursor.GetColumnIndexOrThrow("token"));
+                    Android.Util.Log.Debug("Test", "aaa " + s);
+                }
+                cursor.Close();
+            }
+
+            Android.Util.Log.Debug("Test", "Create new item");
+            ContentValues content = new ContentValues();
+            content.Put(VegetableProvider.InterfaceConsts.Id, "3");
+            content.Put(VegetableProvider.InterfaceConsts.Token, "token3");
+            var ddd = ApplicationContext.ContentResolver.Insert(VegetableProvider.CONTENT_URI, content);
+
+            Android.Util.Log.Debug("Test", "ddd: " + ddd);
+            ICursor c = ApplicationContext.ContentResolver.Query(VegetableProvider.CONTENT_URI, null, null, null, null);
+
+            if (c != null)
+            {
+                while (c.MoveToNext())
+                {
+                    string s = c.GetString(c.GetColumnIndexOrThrow("token"));
+                    Android.Util.Log.Debug("Test", "ccc " + s);
+                }
+                c.Close();
+            }
+
+            // create a SimpleCursorAdapter           
+            cursor = ContentResolver.Query(VegetableProvider.CONTENT_URI, projection, null, null, null);
+            adapter = new SimpleCursorAdapter(this, Android.Resource.Layout.SimpleListItem1, cursor,
+                fromColumns, toControlIds);
+
+            listView.Adapter = adapter;
+
+            listView.ItemClick += OnListItemClick;
+        }
+
+        protected void OnListItemClick(object sender, AdapterView.ItemClickEventArgs e)
+        {
+            var id = e.Id;
+            string[] projection = new string[] { "token" };
+            var uri = Uri.WithAppendedPath(VegetableProvider.CONTENT_URI, id.ToString());
+
+            ICursor vegeCursor = ContentResolver.Query(uri, projection, null, new string[] { id.ToString() }, null);
+
+            string text = "";
+            if (vegeCursor.MoveToFirst())
+            {
+                text = vegeCursor.GetInt(0) + " " + vegeCursor.GetString(1);
+                Android.Widget.Toast.MakeText(this, text, Android.Widget.ToastLength.Short).Show();
+            }
+
+            vegeCursor.Close();
+
+            System.Console.WriteLine("ClickUri" + uri.ToString());
+            System.Console.WriteLine("Clicked on " + text);
+        }
+
+        protected override void OnDestroy()
+        {
+            // ONLY if cursor was created with ContentResolver.Query
+            //StopManagingCursor(cursor);
+            //cursor.Close();
+
+            base.OnDestroy();
+        }
+        ///// <summary>
+        ///// This is called whena new Loader needs to be created. This
+        ///// sample only has one loader, so we don't care about the ID.
+        ///// </summary>
+        //public Android.Content.Loader OnCreateLoader(int id, Bundle args)
+        //{
+        //    return new CursorLoader(this);
+        //}
+
+        //public void OnLoadFinished(Android.Content.Loader loader, Java.Lang.Object data)
+        //{
+        //    adapter.SwapCursor((ICursor)data);
+        //}
+        ///// <summary>
+        ///// This is called when the last Cursor produced to OnLoadFinished()
+        ///// above is about to be closed. We need to make sure we are no longer using it.
+        ///// </summary>
+        //public void OnLoaderReset(Android.Content.Loader loader)
+        //{
+        //    adapter.SwapCursor(null);
+        //}
+    }
+}
+
