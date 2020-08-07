@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<base:BaseContentPage
+    x:Class="DeveloperSample.Core.Pages.DragAndDrop.Sample3.DragAndDropSample3Page"
+    xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:base="clr-namespace:DeveloperSample.Core.Pages.BasePageFiles"
+    xmlns:components="clr-namespace:DeveloperSample.Core.Pages.DragAndDrop.Sample3.Components;assembly=DeveloperSample.Core">
+    <ContentPage.Content>
+
+        <StackLayout Margin="10">
+
+            <StackLayout Margin="10" Orientation="Horizontal">
+                <components:DragAndDropSample3ReceivingView
+                    BackgroundColor="Beige"
+                    HeightRequest="80"
+                    WidthRequest="80" />
+                <components:DragAndDropSample3ReceivingView
+                    BackgroundColor="Beige"
+                    HeightRequest="80"
+                    WidthRequest="80" />
+                <components:DragAndDropSample3ReceivingView
+                    BackgroundColor="Beige"
+                    HeightRequest="80"
+                    WidthRequest="80" />
+
+            </StackLayout>
+            <BoxView
+                BackgroundColor="Blue"
+                HeightRequest="5"
+                WidthRequest="3" />
+            <StackLayout Margin="10" Orientation="Horizontal">
+
+                <components:DragAndDropSample3MovingView
+                    BackgroundColor="Red"
+                    CornerRadius="40"
+                    HeightRequest="40"
+                    WidthRequest="40" />
+                <components:DragAndDropSample3MovingView
+                    BackgroundColor="Green"
+                    CornerRadius="40"
+                    HeightRequest="40"
+                    WidthRequest="40" />
+            </StackLayout>
+
+        </StackLayout>
+
+        <!--<AbsoluteLayout>
+            <components:DragAndDropSample3ReceivingView
+                AbsoluteLayout.LayoutBounds=".1,.1,.2,.2"
+                AbsoluteLayout.LayoutFlags="All"
+                BackgroundColor="Beige" />
+            <components:DragAndDropSample3ReceivingView
+                AbsoluteLayout.LayoutBounds=".5,.1,.2,.2"
+                AbsoluteLayout.LayoutFlags="All"
+                BackgroundColor="Beige" />
+            <components:DragAndDropSample3ReceivingView
+                AbsoluteLayout.LayoutBounds=".9,.1,.2,.2"
+                AbsoluteLayout.LayoutFlags="All"
+                BackgroundColor="Beige" />
+
+
+        -->
+        <!--<components:DragAndDropSample3MovingView
+                AbsoluteLayout.LayoutFlags="All"
+                AbsoluteLayout.LayoutBounds=".1,.9,.2,.3"
+                BackgroundColor="BlueViolet" />-->
+        <!--
+            <components:DragAndDropSample3MovingView
+                AbsoluteLayout.LayoutBounds=".5,.7,.2,.1"
+                AbsoluteLayout.LayoutFlags="All"
+                BackgroundColor="Red"
+                CornerRadius="100"
+                />
+            <components:DragAndDropSample3MovingView
+                AbsoluteLayout.LayoutBounds=".9,.8,.2,.2"
+                AbsoluteLayout.LayoutFlags="All"
+                BackgroundColor="Red" />
+
+        </AbsoluteLayout>-->
+    </ContentPage.Content>
+</base:BaseContentPage>
